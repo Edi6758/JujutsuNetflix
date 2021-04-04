@@ -1,0 +1,107 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza: #AAA;
+    --branco: #FDFDFD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Não permite que a "caixa" aumente o tamanho* mantendo o tamanho definido. Espremendo os elementos e não permitindo que eles saiam*/
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif; 
+    color: var(--branco);
+}
+
+header .container {
+    display: flex; /*Uma forma de alinhas os elementos eme tela, o "FLEX" tem o costume de jogar tudo como linha*/
+    flex-direction: row; /*Uma forma de definir a posição do display flex entre linha ou coluna*/
+    align-items: center; /*alinha os itens dentro da div de maneira vertical*/
+    justify-content: space-between; /*alinha os itens dentro da div de maneira horizontal ... tem outras propriedades*/
+
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*Remove a linha do link ... tem outras utilidades*/
+    color: var(--cinza);
+    margin-right: 10px;
+}:hover {
+    color: var(--branco);
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/jujutsu_capa_v1.jpg');
+    height: 400px;
+    background-size:cover;/*cobertura*/
+
+    display: flex;
+    flex-direction: column; /*fica um embaixo do outro reto como coluna*/
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .titulo{
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--branco);
+    padding: 15px 30px; /*primeiro valor é na vertical e o segundo horizontal*/
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.7s ease all;
+}
+.botao:hover{
+    background: var(--branco);
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+/*WRAPPER = ENVOLOPAR*/
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
